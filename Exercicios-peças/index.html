@@ -1,0 +1,25 @@
+<script>
+    saldo = parseInt(prompt("Informar o saldo inicial"));
+    document.write("Saldo inicial :" + saldo + "<br>");
+    encerrar = "n";
+    while (encerrar == "n") {
+        tipo = parseInt(prompt("Informar o tipo de entrada"));  
+        quantidade = parseInt(prompt("Informar a quantidade"));
+        if (tipo == 1) {
+            saldo = saldo + quantidade;
+            document.write("Entrada:" + quantidade + "<br>");
+        }
+        if (tipo == 2) {
+            if (saldo >= quantidade) {
+                saldo = saldo - quantidade;
+                document.write("Saida :" + quantidade + "<br>");
+            }else{
+                document.write("Saldo insulficiente" + "<br>");
+                alert("Saldo insulficiente !");
+            }
+        }
+        document.write("Saldo" + saldo + "<br>")
+        encerrar = prompt("Deseja encerrar ? (s/n)")
+    }
+    document.write("Sistema encerrado" + "<br>")
+</script>
