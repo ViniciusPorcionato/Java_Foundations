@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .body {
+            background-color: brown;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .div {
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            background-color: white;
+            padding: 50px;
+            border-radius: 20px;
+            margin-top: 100px;
+        }
+
+        .input{
+            padding: 5px;
+            border-radius: 5px;
+            border-style: dashed;
+        }
+
+        .button{
+            padding: 10px;
+            border-radius: 15px;
+            border-style: dashed;
+        }
+
+    </style>
+</head>
+
+<body class="body">
+    <div class="div">
+        <label for="">Insira a primeira nota: </label>
+        <input class="input" type="text" id="valor1" placeholder="Valor 1">
+        <label for="">Insira a segunda nota: </label>
+        <input class="input" type="text" id="valor2" placeholder="Valor 2">
+        <label for="">Insira a terceira nota: </label>
+        <input class="input" type="text" id="valor3" placeholder="Valor 3">
+
+        <button class="button" type="submit" onclick=media()>Calcular</button>
+
+        <Label id="resultado">Resultado: </Label>
+    </div>
+
+</body>
+<script>
+
+    function media() {
+
+        var n1 = parseFloat(document.getElementById('valor1').value);
+
+        var n2 = parseFloat(document.getElementById('valor1').value);
+
+        var n3 = parseFloat(document.getElementById('valor1').value);
+
+        media = (n1 + n2 + n3) / 3
+
+            if (media >= 7) {
+                document.getElementById('resultado').innerText = `Média : ${media} = Aprovado`
+            } else {
+                document.getElementById('resultado').innerText = `Média : ${media} = Reprovado`
+            }
+
+    }
+</script>
+
+</html>

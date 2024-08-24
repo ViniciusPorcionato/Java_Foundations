@@ -1,0 +1,25 @@
+Classe Moeda - 
+
+Propriedade :
+
+- IdMoeda
+- Valor
+- Cor
+
+Classe Maquina
+
+Propriedade :
+
+- IdMaquina
+- Sistema Operacional
+
+Função Contar()
+
+
+Classe Recibo 
+
+Propriedade: 
+
+- IdRecibo
+- Descricacao
+- Data
